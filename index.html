@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Any relevant title you want to give</title>
+    <title>Web App – Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -13,7 +13,14 @@
       <input type="number" id="principal" />
       <br />
       Rate
-      <input type="range" id="rate" step="0.25" onchange="updateRate()" />
+      <input
+        type="range"
+        id="rate"
+        step="0.25"
+        min="1"
+        max="20"
+        onchange="updateRate()"
+      />
       <span id="rate_val">10.25%</span>
       <br />
       No. of Years
@@ -37,7 +44,7 @@
       <button onclick="compute()">Compute</button>
 
       <footer>
-        &#169; This Calculator belongs to Muhammad Wasif
+        &#169; Everyone Can Get Rich This Calculator belongs to Muhammad Wasif
       </footer>
     </div>
   </body>
